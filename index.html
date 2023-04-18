@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="password.css" rel="stylesheet" />
+    <script type="text/javascript" src="passvalidation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my first web page : Rest Password</title>
+  </head>
+  <body>
+    <h1>Choose new password</h1>
+    <h2 style="color: rgb(88, 88, 97)">
+      Almost done.Enter your new password and you are all set.
+    </h2>
+    <form>
+      <label for="fname1">Create a password</label><br />
+      <input
+        type="password"
+        id="fname1"
+        name="CreatePass"
+        onkeyup="return validate()"
+      /><br />
+      <label for="fname2">Confirm new password</label><br />
+      <input
+        type="password"
+        id="fname2"
+        name="ConfirmPass"
+        onkeyup="return validate()"
+      /><br />
+    </form>
+    <ul>
+      <li id="lower">one lower case character</li>
+      <li id="upper">one upper case character</li>
+      <li id="number">one number</li>
+      <li id="special">one special characters</li>
+      <li id="length">minimum eight character</li>
+      <li id="passmatch">both the password are matched</li>
+    </ul>
+
+    <button id="button" name="button" type="button">Reset Password</button>
+  </body>
+</html>
